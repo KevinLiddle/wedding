@@ -3,3 +3,67 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #F7F6F4;
+  margin: 0;
+}
+
+header {
+  min-height: 8rem;
+  font-family: ostrich;
+  font-size: 3rem;
+  color: #555555;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1080px;
+  width: 90%;
+}
+
+.row {
+  overflow: hidden;
+}
+
+.column {
+  float: left;
+  margin-left: 5%;
+}
+
+.column:first-child {
+  margin-left: 0;
+}
+
+.column .half {
+  width: 47.5%;
+}
+
+#ballerz {
+  min-height: 35rem;
+  margin: 0 0;
+  background-image: url('/images/swoosh.png');
+  background-size: cover;
+  background-position: center;
+  overflow: visible;
+
+  h1 {
+    color: #F7F6F4;
+    font-family: theBigIsh;
+    font-size: 8rem;
+    text-align: center;
+    margin: 0;
+    padding: 12rem 0 12rem 0;
+  }
+}
+
+@font-face {
+  font-family: theBigIsh;
+  src: url('fonts/Landsdowne.ttf');
+}
+
+@font-face {
+  font-family: ostrich;
+  src: url('fonts/ostrich-regular.ttf');
+}
+
