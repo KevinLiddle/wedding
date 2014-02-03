@@ -1,25 +1,101 @@
+/*
+ __       __                  __        __  __
+|  \  _  |  \                |  \      |  \|  \
+| $$ / \ | $$  ______    ____| $$  ____| $$ \$$ _______    ______
+| $$/  $\| $$ /      \  /      $$ /      $$|  \|       \  /      \
+| $$  $$$\ $$|  $$$$$$\|  $$$$$$$|  $$$$$$$| $$| $$$$$$$\|  $$$$$$\
+| $$ $$\$$\$$| $$    $$| $$  | $$| $$  | $$| $$| $$  | $$| $$  | $$
+| $$$$  \$$$$| $$$$$$$$| $$__| $$| $$__| $$| $$| $$  | $$| $$__| $$
+| $$$    \$$$ \$$     \ \$$    $$ \$$    $$| $$| $$  | $$ \$$    $$
+ \$$      \$$  \$$$$$$$  \$$$$$$$  \$$$$$$$ \$$ \$$   \$$ _\$$$$$$$
+                                                         |  \__| $$
+                                                          \$$    $$
+                                                           \$$$$$$
+*/
+
+/* Variables */
+
+$primary-color: #F7F6F4;
+$secondary-color: #641C1C;
+
+@font-face {
+  font-family: theBigIsh;
+  src: url('fonts/Landsdowne.ttf');
+}
+
+/* General Rules */
+
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
 body {
-  background-color: #F7F6F4;
+  background-color: $primary-color;
   margin: 0;
+  font: 130% 'Open Sans Condensed', sans-serif;
+  color: #555555;
 }
 
 header {
-  min-height: 8rem;
-  font-family: ostrich;
-  font-size: 3rem;
-  color: #555555;
+  position: fixed;
+  font-size: 2.5rem;
+  padding: 2.5rem;
+  background-color: $primary-color;
+  width: 100%;
 }
+
+.wat {
+  height: 135px;
+}
+
+section {
+  padding: 4rem 0 0 0;
+}
+
+footer {
+  padding: 4rem 0 4rem 0;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: $secondary-color;
+  border-bottom: 0;
+}
+
+a:hover {
+  border-bottom: 1px solid black;
+  border-color: $secondary-color;
+  padding-bottom: 0;
+}
+
+p {
+  margin: 0.75rem;
+}
+
+hr {
+  width: 5rem;
+}
+
+/* Sections */
 
 .container {
   margin: 0 auto;
   max-width: 1080px;
   width: 90%;
+}
+
+.grid {
+  text-align: center;
 }
 
 .row {
@@ -35,35 +111,30 @@ header {
   margin-left: 0;
 }
 
-.column .half {
+.column.half {
   width: 47.5%;
 }
 
+.column.one-third {
+  width: 30%;
+}
+
+.right {
+  float: right;
+}
+
+/* Special */
+
 #ballerz {
-  min-height: 35rem;
-  margin: 0 0;
-  background-image: url('/images/swoosh.png');
+  padding: 5rem;
+  background-image: url('/images/awesome.png');
   background-size: cover;
   background-position: center;
   overflow: visible;
 
   h1 {
-    color: #F7F6F4;
+    color: $primary-color;
     font-family: theBigIsh;
     font-size: 8rem;
-    text-align: center;
-    margin: 0;
-    padding: 12rem 0 12rem 0;
   }
 }
-
-@font-face {
-  font-family: theBigIsh;
-  src: url('fonts/Landsdowne.ttf');
-}
-
-@font-face {
-  font-family: ostrich;
-  src: url('fonts/ostrich-regular.ttf');
-}
-
