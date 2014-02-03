@@ -50,7 +50,7 @@ header {
   width: 100%;
 }
 
-.wat {
+.clear-header {
   height: 135px;
 }
 
@@ -90,7 +90,7 @@ hr {
 
 .container {
   margin: 0 auto;
-  max-width: 1080px;
+  max-width: 800px;
   width: 90%;
 }
 
@@ -136,5 +136,18 @@ hr {
     color: $primary-color;
     font-family: theBigIsh;
     font-size: 8rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .column.full,
+  .column.half {
+    margin: 0;
+    width: 100%;
+  }
+
+  .column .left,
+  .column .right {
+    float: left;
   }
 }
