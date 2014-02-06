@@ -15,8 +15,9 @@
 
 /* Variables */
 
-$primary-color: #F7F6F4;
-$secondary-color: #641C1C;
+$background-color: #F7F6F4;
+$text-color: #555555;
+$link-color: #641C1C;
 
 @font-face {
   font-family: theBigIsh;
@@ -36,26 +37,21 @@ html {
 }
 
 body {
-  background-color: $primary-color;
+  background-color: $background-color;
   margin: 0;
   font: 130% 'Open Sans Condensed', sans-serif;
-  color: #555555;
+  color: $text-color;
 }
 
 header {
-  position: fixed;
   font-size: 2.5rem;
-  padding: 2.5rem;
-  background-color: $primary-color;
+  padding: 1rem;
+  background-color: $background-color;
   width: 100%;
 }
 
-.clear-header {
-  height: 135px;
-}
-
 section {
-  padding: 4rem 0 0 0;
+  padding: 4rem 0 4rem 0;
 }
 
 footer {
@@ -64,17 +60,19 @@ footer {
 
 h2 {
   font-size: 2.25rem;
+  margin-top: 0;
 }
 
 a {
   text-decoration: none;
-  color: $secondary-color;
+  color: $link-color;
   border-bottom: 0;
+  font-weight: 700;
 }
 
 a:hover {
   border-bottom: 1px solid black;
-  border-color: $secondary-color;
+  border-color: $link-color;
   padding-bottom: 0;
 }
 
@@ -83,10 +81,52 @@ p {
 }
 
 hr {
-  width: 5rem;
+  width: 12rem;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 /* Sections */
+
+.fixed-junk {
+  position: fixed;
+  width: 100%;
+
+  .navigation {
+    z-index: 100;
+    background-color: $background-color;
+    display: inline-block;
+
+    ul {
+      list-style: none;
+      padding: 2rem;
+      display: inline-block;
+      margin: 0;
+
+      li {
+        padding: 0.25rem 0 0.25rem 0;
+
+        a {
+          color: $text-color;
+          font-size: 1.5rem;
+          font-weight: 400;
+          margin: 0;
+        }
+
+        a:hover {
+          border: 0;
+        }
+      }
+
+      li:hover {
+        background-color: black;
+      }
+    }
+  }
+}
 
 .container {
   margin: 0 auto;
@@ -113,10 +153,18 @@ hr {
 
 .column.half {
   width: 47.5%;
+
+  hr {
+    width: 5rem;
+  }
 }
 
 .column.one-third {
   width: 30%;
+}
+
+.column.two-thirds {
+  width: 65%;
 }
 
 .right {
@@ -133,15 +181,21 @@ hr {
   overflow: visible;
 
   h1 {
-    color: $primary-color;
+    color: $background-color;
     font-family: theBigIsh;
     font-size: 8rem;
   }
 }
 
+.clear-header {
+  height: 87px;
+}
+
 @media screen and (max-width: 640px) {
   .column.full,
-  .column.half {
+  .column.half,
+  .column.one-third,
+  .column.two-thirds {
     margin: 0;
     width: 100%;
   }
