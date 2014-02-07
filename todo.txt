@@ -1,10 +1,6 @@
-Hotel Information
-Parking info for the hotel
-Where parking is okay
-Shuttle Info
-After Party Info
+####### I don't know if we really need these ########
 
-Things to do in the city
-Things to do in between ceremony and reception
-
-Registration info
+# After Party Info
+#
+# Things to do in the city
+# Things to do in between ceremony and reception
