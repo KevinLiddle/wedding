@@ -175,8 +175,8 @@ img {
 /* Special */
 
 #ballerz {
-  padding: 5rem;
-  background-image: url('/images/awesome1.png');
+  padding: 10rem;
+  background-image: url('/images/awesome2.png');
   background-size: cover;
   background-position: center;
   overflow: visible;
@@ -185,6 +185,7 @@ img {
     color: $background-color;
     font-family: theBigIsh;
     font-size: 8rem;
+    margin: 0;
   }
 }
 
@@ -206,7 +207,13 @@ img {
     float: left;
   }
 
+  .clear-header {
+    height: 120px;
+  }
+
   #ballerz {
+    padding: 5rem;
+
     h1 {
       font-size: 5rem;
     }
