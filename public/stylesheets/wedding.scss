@@ -62,12 +62,12 @@ section {
   border-bottom: 1px solid #F7F7F7;
 }
 
-section:nth-of-type(odd) {
+section:nth-of-type(even) {
   background-color: #f7f4ef;
 }
 
 footer {
-  padding: 4rem 0 4rem 0;
+  padding: 1rem 0;
 }
 
 h2 {
