@@ -1,2 +1,2 @@
-require_relative '../wedding'
+require './wedding.rb'
 run Sinatra::Application
