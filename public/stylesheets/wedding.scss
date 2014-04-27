@@ -104,6 +104,12 @@ img {
   max-width: 100%;
 }
 
+ul {
+  list-style: none;
+  text-align: left;
+  display: inline-block;
+}
+
 /* Sections */
 
 .title-subtitle {
@@ -137,6 +143,10 @@ img {
   margin-left: 0;
 }
 
+.column.full {
+  width: 100%;
+}
+
 .column.half {
   width: 47.5%;
 
@@ -159,6 +169,11 @@ img {
 
 .padded-top {
   padding-top: 4rem;
+}
+
+.center {
+  margin: 0 auto;
+  display: inline-block;
 }
 
 /* Special */
